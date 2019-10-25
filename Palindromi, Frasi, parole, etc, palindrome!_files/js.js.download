@@ -1,0 +1,22 @@
+function ControllaPalindromo(stringa) {
+ if (stringa.length < "3") {
+    alert("Il palindromo e' troppo corto!");    
+ } else {
+   buffer = new String("");
+   for (var i=0; i<stringa.length; i++) {
+        var c = stringa.substring(i,i+1).toUpperCase();
+        if (c!=' ' &&  ((c>='a' && c<='z') || (c>='A' && c<='Z'))) buffer += c;
+   }
+   var bsize = buffer.length;
+   if (bsize<3) {
+      alert("Il palindromo e' troppo corto, anche sei hai aggiunto spazi ...");    
+   } else {
+     var test = 1;
+     for (var i=0; (i<bsize) && (test==1); i++) {
+      test = (buffer.substring(i,i+1) == buffer.substring(bsize-i, bsize-i-1));
+     }
+     if (test == false) alert("non e' un palindromo!");
+     return test
+   }
+ }
+}
