@@ -27,7 +27,7 @@ td {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; text-
 .error {  font-family: Tahoma; font-size: 18px; font-weight: bold; color: #FF0000; }
 ul {
           list-style-type : disc;
-          list-style-image : url(/img/pointer1.gif);
+          list-style-image : url(/web/20180123063327im_/http://plgrs.lacab.it/img/pointer1.gif);
           font-family : Verdana, Arial, Helvetica, sans-serif;
           font-size : 10px;
           margin-top : 2;
@@ -75,7 +75,29 @@ textarea {
 .bg0 { background: #ffffff; background-color:#ffffff;}
 .paratitolo {  background-color: #66CCFF; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; color: #990000; font-weight: bold}
 .scrittalogo {  font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; color: #bbba49}
-.tdmenu {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #181850; background-image: url(bgmenu.png); height: 30px; width: 130px}
+.tdmenu {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #181850; background-image: url(/web/20180123063327im_/http://plgrs.lacab.it/palindromi/bgmenu.png); height: 30px; width: 130px}
 .atdmenu {  font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; color: #181850; height: 30px; width: 130px}
 .bordino {  border: 1px #900105 solid; border-collapse: collapse; }
 .bordinodot { border: #900105; border-style: dotted; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px }
+
+/*
+     FILE ARCHIVED ON 06:33:27 Jan 23, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:20:22 Oct 25, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  load_resource: 363.678
+  PetaboxLoader3.datanode: 53.552 (5)
+  captures_list: 56.311
+  RedisCDXSource: 4.885
+  CDXLines.iter: 15.641 (3)
+  PetaboxLoader3.resolve: 297.517 (2)
+  esindex: 0.011
+  exclusion.robots.policy: 0.114
+  LoadShardBlock: 31.372 (3)
+  exclusion.robots: 0.123
+*/

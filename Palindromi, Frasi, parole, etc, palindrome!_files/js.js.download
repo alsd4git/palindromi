@@ -20,3 +20,25 @@ function ControllaPalindromo(stringa) {
    }
  }
 }
+
+/*
+     FILE ARCHIVED ON 06:49:02 Jan 23, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 14:20:22 Oct 25, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.datanode: 109.375 (5)
+  captures_list: 98.249
+  exclusion.robots: 0.166
+  esindex: 0.025
+  exclusion.robots.policy: 0.153
+  RedisCDXSource: 0.545
+  PetaboxLoader3.resolve: 189.058 (2)
+  LoadShardBlock: 84.707 (3)
+  CDXLines.iter: 10.171 (3)
+  load_resource: 282.22
+*/
