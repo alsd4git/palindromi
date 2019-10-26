@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+    <title>Palindromi - git</title>
+</head>
+
+<body>
+    <div class="lista-palindormi" style="text-align: center;">
+
+    </div>
+
+</body>
+
+<script>
+    $(function () {
+        console.log("ready!");
+
+        $.ajax({
+            async: true,
+            url: 'data.txt',
+            dataType: 'text',
+            success: function (data) {
+                processData(data);
+            }
+        });
+    });
+
+    function processData(data) {
+        arrayOfLines = data.split("\n");
+        // console.log(arrayOfLines.length);
+        arrayOfLines.forEach(element => {
+            // console.log(element);
+            $(".lista-palindormi").append("<p>" + element + "</p>");
+        });
+    }
+</script>
