@@ -4,22 +4,20 @@
     <title>Palindromi - git</title>
     <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
     <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <style>
         body {
             background-color: black;
         }
-
+        
         .palindrome-line {
             color: white;
         }
-
+        
         .title {
             color: white;
             font-size: x-large;
@@ -30,18 +28,21 @@
 
 <body>
     <div class="title text-center pt-2">Palindromi - imordnilaP</div>
+    <div class="text-center">
+        <a href="https://github.com/alsd4git/palindromi">link to github repo</a>
+    </div>
     <br>
     <div class="lista-palindormi text-center">
     </div>
 </body>
 
 <script>
-    $(function () {
+    $(function() {
         $.ajax({
             async: true,
             url: 'data.txt',
             dataType: 'text',
-            success: function (data) {
+            success: function(data) {
                 processData(data);
             }
         });
@@ -53,8 +54,9 @@
         arrayOfLines = data.split("\n");
         i = 0;
         arrayOfLines.forEach(element => {
-            $(".lista-palindormi").append("<div class='palindrome-line py-1'>" + (++i) + ") " + element +
-                "</div>");
+            if (element) {
+                $(".lista-palindormi").append("<div class='palindrome-line py-1'>" + (++i) + ") " + element + "</div>");
+            }
         });
     }
 </script>
