@@ -1,0 +1,126 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #101014;
+  color: #f5f4f7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+}
+
+.page {
+  width: min(100% - 2rem, 60rem);
+  margin: 0 auto;
+  padding: 3rem 0 2rem;
+}
+
+.hero {
+  max-width: 48rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: #b9a9ff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.25rem, 8vw, 4.5rem);
+  line-height: 1.05;
+}
+
+.hero > p:last-child {
+  color: #c8c5d0;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.controls {
+  margin: 2.5rem 0 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #5e5a6b;
+  border-radius: 0.5rem;
+  background: #1d1b24;
+  color: inherit;
+  font: inherit;
+}
+
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #b9a9ff;
+  outline-offset: 3px;
+}
+
+.results {
+  color: #c8c5d0;
+}
+
+.palindrome-list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.palindrome-list li {
+  padding: 0.85rem 1rem;
+  border: 1px solid #383441;
+  border-radius: 0.5rem;
+  background: #1a181f;
+  line-height: 1.55;
+}
+
+.entry-number {
+  display: inline-block;
+  min-width: 3rem;
+  color: #b9a9ff;
+  font-variant-numeric: tabular-nums;
+}
+
+.error {
+  padding: 1rem;
+  border: 1px solid #eaa9a9;
+  border-radius: 0.5rem;
+  background: #371a21;
+  color: #ffe9e9;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+a {
+  color: #d0c4ff;
+}
+
+@media (max-width: 36rem) {
+  .page {
+    padding-top: 2rem;
+  }
+
+  .entry-number {
+    display: block;
+  }
+}

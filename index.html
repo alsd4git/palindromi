@@ -1,62 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'none'; form-action 'none'; script-src 'self'; style-src 'self'"
+    >
+    <meta
+      name="description"
+      content="Una raccolta storica di palindromi, recuperata e pubblicata senza dipendenze esterne."
+    >
+    <title>Palindromi — imordnilaP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Raccolta storica</p>
+        <h1>Palindromi <span aria-hidden="true">—</span> imordnilaP</h1>
+        <p>
+          Una raccolta recuperata da una versione archiviata del sito originale.
+          Il testo viene mostrato così com’è, con attribuzione e contesto nel repository.
+        </p>
+      </header>
 
-<head>
-    <title>Palindromi - git</title>
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
-    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+      <section class="controls" aria-label="Filtra la raccolta">
+        <label for="search">Cerca un palindromo</label>
+        <input id="search" type="search" autocomplete="off" placeholder="Es. Roma, anna, sator…">
+        <p id="results" class="results" aria-live="polite">Caricamento della raccolta…</p>
+      </section>
 
-    <style>
-        body {
-            background-color: black;
-        }
-        
-        .palindrome-line {
-            color: white;
-        }
-        
-        .title {
-            color: white;
-            font-size: x-large;
-        }
-    </style>
+      <ol id="palindromes" class="palindrome-list" aria-busy="true"></ol>
 
-</head>
+      <p id="error" class="error" role="alert" hidden></p>
 
-<body>
-    <div class="title text-center pt-2">Palindromi - imordnilaP</div>
-    <div class="text-center">
-        <a href="https://github.com/alsd4git/palindromi">link to github repo</a>
-    </div>
-    <br>
-    <div class="lista-palindormi text-center">
-    </div>
-</body>
-
-<script>
-    $(function() {
-        $.ajax({
-            async: true,
-            url: 'data.txt',
-            dataType: 'text',
-            success: function(data) {
-                processData(data);
-            }
-        });
-
-        // processData("1,2,3\nciao\nboh\nprova"); // for testing purpose only
-    });
-
-    function processData(data) {
-        arrayOfLines = data.split("\n");
-        i = 0;
-        arrayOfLines.forEach(element => {
-            if (element) {
-                $(".lista-palindormi").append("<div class='palindrome-line py-1'>" + (++i) + ") " + element + "</div>");
-            }
-        });
-    }
-</script>
+      <footer>
+        <a href="https://github.com/alsd4git/palindromi">Codice, fonti e note sui diritti</a>
+      </footer>
+    </main>
+  </body>
+</html>
