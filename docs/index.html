@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'none'; form-action 'none'; script-src 'self'; style-src 'self'"
+    >
+    <meta
+      name="description"
+      content="Una raccolta storica di palindromi, recuperata e pubblicata senza dipendenze esterne."
+    >
+    <title>Palindromi — imordnilaP</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">Raccolta storica</p>
+        <h1>Palindromi <span aria-hidden="true">—</span> imordnilaP</h1>
+        <p>
+          Una raccolta recuperata da una versione archiviata del sito originale.
+          Il testo viene mostrato così com’è, con attribuzione e contesto nel repository.
+        </p>
+      </header>
+
+      <section class="controls" aria-label="Filtra la raccolta">
+        <label for="search">Cerca un palindromo</label>
+        <input id="search" type="search" autocomplete="off" placeholder="Es. Roma, anna, sator…">
+        <p id="results" class="results" aria-live="polite">Caricamento della raccolta…</p>
+      </section>
+
+      <ol id="palindromes" class="palindrome-list" aria-busy="true"></ol>
+
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <footer>
+        <a href="https://github.com/alsd4git/palindromi">Codice, fonti e note sui diritti</a>
+      </footer>
+    </main>
+  </body>
+</html>
