@@ -35,18 +35,19 @@ La configurazione GitHub Pages esistente usa il branch `gh-pages`. Il sorgente
 da pubblicare è il contenuto di `docs/`, non l'intero repository.
 
 Per semplificare la manutenzione futura, nelle impostazioni Pages si può cambiare
-una sola volta la sorgente in `master` / `/docs`. Se si mantiene `gh-pages`,
+una sola volta la sorgente in `main` / `/docs`. Se si mantiene `gh-pages`,
 pubblicare solo dopo aver verificato i test e sincronizzare il contenuto di
 `docs/` nella radice di quel branch. Nessuna delle due operazioni è automatica
 da questo repository, così le pubblicazioni restano revisionabili.
 
 ## Diritti e privacy
 
-Il testo della raccolta e il materiale in `archive/` sono recuperati da un sito
-di terzi e i relativi diritti non sono stati chiariti. Il repository non concede
-una licenza su quel materiale; richieste dei titolari possono essere inviate
-all'autore del repository per correzione o rimozione. Per questo motivo non è
-stata aggiunta una licenza al progetto.
+Il codice del sito e gli strumenti di estrazione sono distribuiti con licenza
+MIT; vedi [LICENSE](LICENSE). Il testo della raccolta e il materiale in
+`archive/` sono recuperati da un sito di terzi e i relativi diritti non sono
+stati chiariti: la licenza non si estende a quel materiale. Richieste dei
+titolari possono essere inviate all'autore del repository per correzione o
+rimozione.
 
 Il sito in `docs/` non include analytics, cookie, font, script o richieste a
 terzi: carica soltanto i propri file statici. Il provider di hosting (GitHub
