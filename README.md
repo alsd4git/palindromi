@@ -1,9 +1,11 @@
-# Palindromi — imordnilaP
+# Palindromi: imordnilaP
+
+[Apri la raccolta su GitHub Pages](https://alsd4git.github.io/palindromi/)
 
 Una versione statica della raccolta di palindromi che era disponibile sul sito
 `plgrs.lacab.it/palindromi/`, recuperata da una [cattura Wayback del 31 marzo
 2019](https://web.archive.org/web/20190331173205/http://plgrs.lacab.it/palindromi/).
-Il sito pubblicato è disponibile su [GitHub Pages](https://alsd4git.github.io/palindromi/).
+Il repository conserva anche il contesto storico e i passaggi usati per recuperare i contenuti.
 
 ## Struttura
 
